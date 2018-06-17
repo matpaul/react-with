@@ -1,0 +1,8 @@
+{
+  "short_name": "react-with",
+  "name": "react-with",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
