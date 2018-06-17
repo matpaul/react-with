@@ -35,11 +35,18 @@ const Toggle = ({ children, initial }) => (
 ```
 
 Props:
+
 *state* - initial state object
+
+
 *lifecycle* - object with React lifecycle hooks (componentDidMount, componentWillUnmount, etc) (see Fetch example)
+
+
 *render* - if there is a necessity to use instead of children function
 
 Each function passed to With Component receives *self* as a first argument.
+
+
 *self* is an object and contains current state, setState, and other passed props to With component
 
 ## Examples
