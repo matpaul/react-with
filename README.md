@@ -46,13 +46,12 @@ Props:
 
 Each function passed to With Component receives *self* as a first argument.
 
-
 *self* is an object and contains current state, setState, and other passed props to With component
 
 ## Examples
 #### Toggle
 ```jsx
-import React, { Component } from 'react';
+import React from 'react';
 
 import With from 'react-with';
 
@@ -109,6 +108,7 @@ const Fetch = ({ url, children, render }) => (
   </With>);
 
 // use
+const url = 'https://jsonplaceholder.typicode.com/comments';
 <Fetch url={url}>
   {({ loading, result }) =>
     loading ? (
