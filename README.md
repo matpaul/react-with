@@ -22,7 +22,7 @@ import React from 'react';
 import With from 'react-with';
 
 const onToggle = ({ state, setState }, event) =>
-  setState(state => ({ on: !state.on }));
+  setState(prevState => ({ on: !prevState.on }));
 
 const Toggle = ({ children, initial }) => (
   <With state={{ on: initial }} toggle={onToggle}>
@@ -56,7 +56,7 @@ import React from 'react';
 import With from 'react-with';
 
 const onToggle = ({ state, setState }) =>
-  setState(state => ({ on: !state.on }));
+  setState(prevState => ({ on: !prevState.on }));
 
 const Toggle = ({ children, initial }) => (
   <With state={{ on: initial }} toggle={onToggle}>
